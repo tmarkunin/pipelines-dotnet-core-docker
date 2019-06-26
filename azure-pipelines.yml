@@ -2,10 +2,17 @@ trigger:
 - master
 
 jobs:
-- job: windows
-  displayName: 'Windows'
+- job: BuildandPush
+  displayName: 'BuildandPush'
   pool:
     vmImage: 'ubuntu-16.04'
+    steps:
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: '# Write your commands here
+          
+          # Use the environment variables input below to pass secret variables to this script'
 
 
 
