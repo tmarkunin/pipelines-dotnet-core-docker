@@ -11,6 +11,13 @@ jobs:
       inputs:
         targetType: 'inline'
         script: 'ls'
+    - task: Docker@2
+      displayName: Build image
+      inputs:
+        containerRegistry: 'tma-acr-connection'
+        repository: 'dotnetcore'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
 
 
 
