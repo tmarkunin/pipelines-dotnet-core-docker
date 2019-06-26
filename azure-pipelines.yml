@@ -6,6 +6,7 @@
 # Set variables once
 variables:
   imageName: dotnetcore
+  dockerId:  tmaregistry.azurecr.io
 
 trigger:
 - master
