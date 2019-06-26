@@ -6,7 +6,6 @@ jobs:
   displayName: 'Windows'
   pool:
     vmImage: 'ubuntu-16.04'
-  steps:
 
 
 
