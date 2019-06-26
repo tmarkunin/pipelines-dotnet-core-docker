@@ -1,9 +1,6 @@
 # Set variables once
 variables:
   imageName: dotnetcore
-trigger:
-- master
-
 - stage: Build
   displayName: Build and push stage
   jobs:  
