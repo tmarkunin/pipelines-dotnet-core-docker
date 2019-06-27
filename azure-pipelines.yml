@@ -14,4 +14,5 @@ pool:
   vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
-- script: docker build -t $(dockerId)/$(imageName) .  # add options to this command to meet your needs
+- script: | 
+docker build -t $(dockerId)/$(imageName) .  # add options to this command to meet your needs
