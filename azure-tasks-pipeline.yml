@@ -11,3 +11,8 @@ steps:
     repository: 'dotnetcore1'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+- task: HelmInstaller@1
+  displayName: Install Helm
+  inputs:
+    helmVersionToInstall: 'latest'
+
