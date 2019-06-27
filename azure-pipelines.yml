@@ -16,5 +16,5 @@ pool:
 steps:
 - script: | 
     docker build -t $(dockerId).azurecr.io/$(imageName):latest .  # add options to this command to meet your needs
-    docker login -u $(dockerId) -p $(password)
+    docker login  $(dockerId).azurecr.io -u $(dockerId) -p $(password)
     docker push $(dockerId).azurecr.io/$(imageName)
